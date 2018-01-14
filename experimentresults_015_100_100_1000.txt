@@ -1,0 +1,13 @@
+relevanceScores = { 'N':0, 'R':1, 'HR':5 }
+k = 3
+numberOfRandomTestSets = 100
+testSetSize = 100
+numberOfInterleavingExperimentsPerPair = 1000
+
+
+	AP	nDCG	ERR	RCM	SDCM	
+AP:	100%	100%	100%	42%	47%	
+nDCG:	100%	100%	100%	42%	47%	
+ERR:	100%	100%	100%	42%	47%	
+RCM:	42%	42%	42%	100%	44%	
+SDCM:	47%	47%	47%	44%	100%	
