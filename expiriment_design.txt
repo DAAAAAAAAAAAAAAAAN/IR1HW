@@ -1,0 +1,25 @@
+construct 59000 pairs
+M times:
+	testset <- pick 1000 pairs at random
+	for each pair in testset:
+		testset_AP -> higher value = winner
+		testset_nDCG -> higher value = winner
+		testset_ERR -> higher value = winner
+		testset_interleaving_RCM (N iterations) -> most wins = winner
+		testset_interleaving_SDCM (N iterations) -> most wins = winner
+	each measure -> most wins = winner
+	10 unique pairs of measures, do they agree on winner? y/n
+
+10 unique pairs of measures, how many times do they agree?
+10 unique pairs of measures -> perform significance test
+
+
+
+winner of
+pair: the higher value for each delta measure, or the most wins for an interleaving experiment
+random set of pairs: for each measure, the algorithm with the highest number of wins
+
+
+
+expected:
+- when 2 rankings are identical, the offline measures should be indiscriminate, and the interleaving experiments should sometimes be indiscriminate, but other times pick a winner randomly.
