@@ -11,3 +11,30 @@ nDCG:	100%	100%	100%	42%	47%
 ERR:	100%	100%	100%	42%	47%	
 RCM:	42%	42%	42%	100%	44%	
 SDCM:	47%	47%	47%	44%	100%	
+
+
+
+
+relevanceScores = { 'N':0, 'R':1, 'HR':5 }
+k = 5
+numberOfRandomTestSets = 50000
+testSetSize = 50
+numberOfInterleavingExperimentsPerPair = 100
+
+
+Analyzing test set #0 out of 50000 at 0.000 sets per second
+Analyzing test set #5000 out of 50000 at 1.482 sets per second
+Analyzing test set #10000 out of 50000 at 1.510 sets per second
+Analyzing test set #15000 out of 50000 at 1.519 sets per second
+Analyzing test set #20000 out of 50000 at 1.519 sets per second
+Analyzing test set #25000 out of 50000 at 1.520 sets per second
+Analyzing test set #30000 out of 50000 at 1.521 sets per second
+Analyzing test set #35000 out of 50000 at 1.521 sets per second
+Analyzing test set #40000 out of 50000 at 1.522 sets per second
+Analyzing test set #45000 out of 50000 at 1.524 sets per second
+	AP	nDCG	ERR	RCM	SDCM	
+AP:	100%	59%	55%	45%	54%	
+nDCG:	59%	100%	75%	45%	66%	
+ERR:	55%	75%	100%	42%	65%	
+RCM:	45%	45%	42%	100%	44%	
+SDCM:	54%	66%	65%	44%	100%	
